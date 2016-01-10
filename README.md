@@ -1,2 +1,2 @@
-# ncss_robotics
-Code for the robots made in NCSS
+# NCSS Robotics
+Code for Edgar and his friends
