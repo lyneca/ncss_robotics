@@ -53,7 +53,7 @@ byte arrows[5][8] = {
   }
 };
 
-byte faces[7][8] = {
+byte faces[9][8] = {
   {
     B00000000,
     B00000000,
@@ -97,6 +97,24 @@ byte faces[7][8] = {
     B01100000,
     B01100000,
     B00100100,
+    B00000000,
+    B00000000,
+  }, {
+    B00000000,
+    B00000000,
+    B00100010,
+    B01000000,
+    B01000000,
+    B00100010,
+    B00000000,
+    B00000000,
+  }, {
+    B00000000,
+    B00000000,
+    B00101000,
+    B01000000,
+    B01000000,
+    B00101000,
     B00000000,
     B00000000,
   }, {
@@ -195,13 +213,13 @@ void fwd() {
   Serial.println("fwd");
   servoLeft.writeMicroseconds(1700);
   servoRight.writeMicroseconds(1300);
-  showFace(happy);
+  showFace(lookdown);
 }
 void bwd() {
   Serial.println("bwd");
   servoLeft.writeMicroseconds(1300);
   servoRight.writeMicroseconds(1700);
-  showFace(sad);
+  showFace(lookup);
 }
 void lft() {
   Serial.println("lft");

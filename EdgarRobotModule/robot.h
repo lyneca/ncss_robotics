@@ -12,6 +12,8 @@ enum face {
   lookright,
   sad,
   boop,
+  lookup,
+  lookdown,
   weird1,
   weird2,
 };
